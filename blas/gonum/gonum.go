@@ -74,3 +74,8 @@ func blocks(dim, bsize int) int {
 func dcabs1(z complex128) float64 {
 	return math.Abs(real(z)) + math.Abs(imag(z))
 }
+
+// conj returns the complex conjugate of x.
+func conj(z complex128) complex128 {
+	return complex(real(z), -imag(z))
+}
